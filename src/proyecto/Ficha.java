@@ -27,9 +27,7 @@ public class Ficha {
             filaini=lea.nextInt();
             colini=lea.nextInt();
         }
-        public void comer(){
-            System.out.println("Usted ha comido una pieza o Ficha");
-        }
+        
 
 
     }

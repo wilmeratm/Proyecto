@@ -27,16 +27,16 @@ public class Peon extends Ficha {
         System.out.println("Ingrese Columna");
         columter=lea.nextInt();
 
-        int restacolumna1 = columter-super.colini;
+        int restacolumna1 = columter-colini;
         int filix= filater;
-        int restacolumna2 = super.colini-columter;
+        int restacolumna2 = colini-columter;
         int filix2 = filater;
 
         if ( filater!=-1 && columter != -1){
 
         
         if(Tablero.jugador1==1){
-                if ( restacolumna1 == 1 && filix== super.filaini ){
+                if ( restacolumna1 == 1 && filix== filaini ){
                if( tab.tablero[filater][columter].equals("-")){
          tab.tablero[filater][columter]= "PV";
          tab.tablero[filaini][colini]= "_";

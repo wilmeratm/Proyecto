@@ -14,8 +14,13 @@ public class Elefante extends Ficha {
     Tablero table= new Tablero();
    int filter, colter;
 
-   public Elefante ( int filini, int colini){
+   public Elefante ( int filini, int colini, int turn){
        super( filini, colini);
+       if( turn==1){
+            table.jugador1=1;
+        }else{
+            table.jugador2=2;
+        }
    }
 
     @Override

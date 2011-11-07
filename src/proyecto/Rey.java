@@ -14,8 +14,13 @@ public class Rey extends Ficha {
      Tablero table= new Tablero();
    int filter, colter;
 
-   public Rey ( int filini, int colini){
+   public Rey ( int filini, int colini, int turn){
        super( filini, colini);
+       if( turn==1){
+            table.jugador1=1;
+        }else if ( turn ==2){
+            table.jugador2=2;
+       }
    }
 
 

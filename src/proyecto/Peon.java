@@ -14,8 +14,13 @@ public class Peon extends Ficha {
     Tablero tab = new Tablero();
     int filater, columter;
 
-    public Peon ( int fila, int columna ){
+    public Peon ( int fila, int columna, int turn ){
         super ( fila , columna );
+        if( turn==1){
+            tab.jugador1=1;
+        }else{
+            tab.jugador2=2;
+        }
     }
 
     @Override

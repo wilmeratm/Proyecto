@@ -13,8 +13,8 @@ public class Tablero {
 
 
 
-    public static final int jugador1= 1;
-    public static final int jugador2= 2;
+    public static  int jugador1= 1;
+    public static  int jugador2= 2;
 
     String tablero[][] = new String [9][9];
 
